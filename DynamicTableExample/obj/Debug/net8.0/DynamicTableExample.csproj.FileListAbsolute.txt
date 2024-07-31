@@ -28,3 +28,4 @@
 /Users/thereigo/Programming/c#/Summary/DynamicTableExample/DynamicTableExample/obj/Debug/net8.0/DynamicTableExample.pdb
 /Users/thereigo/Programming/c#/Summary/DynamicTableExample/DynamicTableExample/obj/Debug/net8.0/DynamicTableExample.genruntimeconfig.cache
 /Users/thereigo/Programming/c#/Summary/DynamicTableExample/DynamicTableExample/obj/Debug/net8.0/ref/DynamicTableExample.dll
+/Users/thereigo/Programming/c#/Summary/DynamicTableExample/DynamicTableExample/obj/Debug/net8.0/DynamicTableExample.sourcelink.json

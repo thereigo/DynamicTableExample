@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DynamicTableExample")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f1128ac2e8c79fd470b99b03a525bdf932206511")]
 [assembly: System.Reflection.AssemblyProductAttribute("DynamicTableExample")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DynamicTableExample")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

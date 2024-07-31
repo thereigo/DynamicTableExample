@@ -6,6 +6,20 @@
 <form method="get">
     <input type="text" name="filter" value="@Model.CurrentFilter" placeholder="Filter by name" />
     <button type="submit">Filter</button>
+    <select name="selectedName">
+        <option value="">-- Select Name --</option>
+        @foreach (var option in Model.NameOptions)
+        {
+            if (option.Value == Model.SelectedName)
+            {
+                <option value="@option.Value" selected="selected">@option.Text</option>
+            }
+            else
+            {
+                <option value="@option.Value">@option.Text</option>
+            }
+        }
+    </select>
 </form>
 
 <table>
