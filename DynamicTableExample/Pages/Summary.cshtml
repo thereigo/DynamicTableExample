@@ -1,0 +1,103 @@
+﻿@page
+@model DynamicTableExample.Pages.SummaryModel
+
+<h2>Summary Page</h2>
+
+<form method="get">
+    <input type="text" name="filter" value="@Model.CurrentFilter" placeholder="Filter by name" />
+    <button type="submit">Filter</button>
+</form>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                <a asp-page="./Summary" asp-route-sortColumn="Name"
+                    asp-route-ascending="@(Model.SortColumn == "Name" ? !Model.Ascending : true)">
+                    Name @if (Model.SortColumn == "Name")
+                    {
+                        <span>@(Model.Ascending ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Summary" asp-route-sortColumn="Column2"
+                    asp-route-ascending="@(Model.SortColumn == "Column2" ? !Model.Ascending : true)">
+                    Column2 @if (Model.SortColumn == "Column2")
+                    {
+                        <span>@(Model.Ascending ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Summary" asp-route-sortColumn="Column3"
+                    asp-route-ascending="@(Model.SortColumn == "Column3" ? !Model.Ascending : true)">
+                    Column3 @if (Model.SortColumn == "Column3")
+                    {
+                        <span>@(Model.Ascending ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Summary" asp-route-sortColumn="Column4"
+                    asp-route-ascending="@(Model.SortColumn == "Column4" ? !Model.Ascending : true)">
+                    Column4 @if (Model.SortColumn == "Column4")
+                    {
+                        <span>@(Model.Ascending ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Summary" asp-route-sortColumn="Column5"
+                    asp-route-ascending="@(Model.SortColumn == "Column5" ? !Model.Ascending : true)">
+                    Column5 @if (Model.SortColumn == "Column5")
+                    {
+                        <span>@(Model.Ascending ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Summary" asp-route-sortColumn="Column6"
+                    asp-route-ascending="@(Model.SortColumn == "Column6" ? !Model.Ascending : true)">
+                    Column6 @if (Model.SortColumn == "Column6")
+                    {
+                        <span>@(Model.Ascending ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Summary" asp-route-sortColumn="Column7"
+                    asp-route-ascending="@(Model.SortColumn == "Column7" ? !Model.Ascending : true)">
+                    Column7 @if (Model.SortColumn == "Column7")
+                    {
+                        <span>@(Model.Ascending ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+            <th>
+                <a asp-page="./Summary" asp-route-sortColumn="Column8"
+                    asp-route-ascending="@(Model.SortColumn == "Column8" ? !Model.Ascending : true)">
+                    Column8 @if (Model.SortColumn == "Column8")
+                    {
+                        <span>@(Model.Ascending ? "↑" : "↓")</span>
+                    }
+                </a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Items)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Column2</td>
+                <td>@item.Column3</td>
+                <td>@item.Column4</td>
+                <td>@item.Column5</td>
+                <td>@item.Column6</td>
+                <td>@item.Column7</td>
+                <td>@item.Column8</td>
+            </tr>
+        }
+    </tbody>
+</table>
